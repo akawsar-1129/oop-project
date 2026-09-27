@@ -1,4 +1,4 @@
-# MediCare Emergency Management System
+# MedSmart Emergency Management System
 
 Java Swing OOP project. All classes are in the default package, so they
 can compile and run straight from one folder.
