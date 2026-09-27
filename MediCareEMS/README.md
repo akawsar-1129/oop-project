@@ -15,7 +15,7 @@ can compile and run straight from one folder.
 - `Hospital.java` — 200 general beds + 50 emergency beds, with the 90%-full check on the emergency pool
 - `CapacityExceededException.java`, `ServiceNotFoundException.java` — custom **exceptions**
 - `EmergencyManager.java` — business logic, `ArrayList` + `HashMap` (**collections**)
-- `MediCareGUI.java` — Swing **GUI**, entry point (`main` method)
+- `MediSmartGUI.java` — Swing **GUI**, entry point (`main` method)
 
 ## What changed in this version
 - **Duplicate IDs are rejected.** Registering a service with an ID that's already active shows "already registered" instead of silently corrupting the list. Once that service is completed or cancelled, the ID is free to use again.
@@ -67,7 +67,7 @@ java MediCareGUI
 | 12 | General admission | `Hospital.admitGeneral()` |
 | 13 | General discharge | `Hospital.dischargeGeneral()` |
 | 14 | Hospital bed status | `Hospital.getStatusSummary()` |
-| — | Error messages | `MediCareGUI.showError()` + try/catch around every action |
+| — | Error messages | `MediSmartGUI.showError()` + try/catch around every action |
 
 ## OOP parameter checklist
 | Concept | Where |
@@ -80,5 +80,5 @@ java MediCareGUI
 | Overloading | Multiple constructors (`EmergencyService`, `AmbulanceService`, `AdvancedAmbulance`) and dispatch methods (`AmbulanceService.dispatch()` / `dispatch(String)`) |
 | Exception | `CapacityExceededException` (custom, checked) |
 | Collections | `ArrayList` + `HashMap` in `EmergencyManager` |
-| GUI | Java Swing (`MediCareGUI`) |
+| GUI | Java Swing (`MediSmartGUI`) |
 | Exception handling | try/catch around every GUI action; checked exceptions per-action, unchecked exceptions centrally in `addButton` |
